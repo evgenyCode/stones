@@ -1,0 +1,125 @@
+body{margin: 0;
+color: white;
+background-color: rgb(8, 8, 8);}
+
+header{
+    height: 120px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+.logo{
+    height: 100%;
+   object-fit: cover;
+
+}
+
+
+.nav {display: flex;
+list-style: none;
+gap: 1rem;}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.stones-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+.stone-wrapper{
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    background-color: rgba(12, 12, 12, 0.486);
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid white;
+    gap: 2rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: rgb(219, 218, 218);
+    transition: 0.3s;
+}
+
+.stone-wrapper:hover{
+   scale: 1.03;
+   
+}
+
+.stone-image{
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.stones-form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.stones-form input {
+    padding: 0.5rem 1rem;
+}
+.stones-form button{
+    padding: 0.5rem;
+    border: 2px;
+    
+    background-color: rgba(255, 217, 0, 0.575);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.stones-form button:hover{
+    padding: 0.5rem;
+    border: 2px;
+    
+    background-color: rgb(255, 217, 0);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3sec;
+}
+.response-message{
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+
+.stone-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.stone-page-image{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    padding-left: 1rem;
+    border-radius: 2rem;
+
+}
+
+
+.stone-info{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
