@@ -14,7 +14,7 @@ stoneFormButton.addEventListener ("click", async ()=>{
        }
 
        try{
-       const response = await fetch('https://64e3a69ebac46e480e790ddd.mockap.io/stones',{
+       const response = await fetch('https://64e3a69ebac46e480e790ddd.mockapi.io/stones',{
     method: 'POST',
     headers:{
         Accept: "application/json",

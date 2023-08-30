@@ -123,3 +123,25 @@ gap: 1rem;}
     padding-right: 1rem;
     padding-top: 1rem;
 }
+
+.delete-button{
+    padding: 1rem 2rem;
+    background: brown;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3sec;
+}
+
+.delete-button:hover{
+    background-color: rgb(245, 5, 5);
+}
+
+.info-message{
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+
+}
+    

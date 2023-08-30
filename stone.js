@@ -1,3 +1,10 @@
+const stoneId = localStorage.getItem('stoneId');
+const deleteButton = document.getElementById('delete-button')
+
+console.log('stoneId', stoneId);
+
+
+
 const addStoneToScreen = (stone)=>{
     const title = document.getElementById ('stone-title');
     title.innerHTML = stone.title;
@@ -17,10 +24,31 @@ stoneImage.src = stone.img_url;
 
 
 const getStone = async () => {
-    const response = await fetch('https://64e3a69ebac46e480e790ddd.mockapi.io/stones/2');
+    const response = await fetch('https://64e3a69ebac46e480e790ddd.mockapi.io/stones/' + stoneId );
     const stone = await response.json();
 
-    console.log(stone);
+    
     addStoneToScreen(stone);
 };
 getStone();
+
+deleteButton.addEventListener ('click', async()=>{
+    
+    const response = await fetch('https://64e3a69ebac46e480e790ddd.mockapi.io/stones/' + stoneId,
+    {
+    method: 'DELETE',
+   
+})
+const data = await response.json();
+
+if(data){
+    const infoMessage = document.getElementById('info-message');
+    infoMessage.innerHTML = 'Stone was deleted';
+    setTimeout(()=>{window.location.replace("index.html")
+
+    },3000)
+}
+
+
+})
+
