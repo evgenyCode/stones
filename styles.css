@@ -21,7 +21,8 @@ header{
 
 .nav {display: flex;
 list-style: none;
-gap: 1rem;}
+gap: 1rem;
+font-size: larger;}
 
 .nav li a {
     text-decoration: none;
@@ -142,6 +143,31 @@ gap: 1rem;}
     text-align: center;
     margin: auto;
     margin-top: 1rem;
+
+}
+
+
+
+@media (max-width: 768px) {
+   
+    header{
+        display: flex;
+        justify-content: center;
+    }
+   
+   
+    .logo {
+        display: none;
+        
+    }
+
+    .stones-wrapper {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        align-items: flex-start;
+    }
 
 }
     

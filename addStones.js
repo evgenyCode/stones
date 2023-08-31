@@ -5,6 +5,16 @@ stoneFormButton.addEventListener ("click", async ()=>{
     const stonePrice = document.getElementById('stone-price').value;
     const stoneDescription = document.getElementById('stone-description').value;
     const stoneImage = document.getElementById('stone-image').value;
+
+
+    if (!stoneTitle || isNaN(stonePrice) || !stoneDescription || !stoneImage) {
+        const messageWrapper = document.getElementById('response-message');
+        messageWrapper.innerHTML = "All fields must be filled.";
+        return;
+    }
+
+
+    
     
     const stone = {
         "title": stoneTitle,
@@ -35,7 +45,8 @@ messageWrapper.innerHTML = "Stone was inserted"
 }
 
 
-       }catch(err) {
+       }
+       catch(err) {
        console.log('err', err)
        const messageWrapper = document.getElementById('response-message');
 messageWrapper.innerHTML = "ERROR!!!"

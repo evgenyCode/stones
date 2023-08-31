@@ -32,7 +32,10 @@ const getStone = async () => {
 };
 getStone();
 
+
 deleteButton.addEventListener ('click', async()=>{
+
+    try{
     
     const response = await fetch('https://64e3a69ebac46e480e790ddd.mockapi.io/stones/' + stoneId,
     {
@@ -46,9 +49,12 @@ if(data){
     infoMessage.innerHTML = 'Stone was deleted';
     setTimeout(()=>{window.location.replace("index.html")
 
-    },3000)
+    },3000);
 }
-
-
-})
-
+    }
+    catch(err) {
+        console.log('err', err)
+        const infoMessage = document.getElementById('info-message');
+ infoMessage.innerHTML = "ERROR!!! Stone was not deleted"
+        }
+    });
