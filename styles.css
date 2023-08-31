@@ -1,5 +1,5 @@
 body{margin: 0;
-color: white;
+color: rgb(231, 229, 229);
 background-color: rgb(8, 8, 8);}
 
 header{
@@ -26,30 +26,36 @@ font-size: larger;}
 
 .nav li a {
     text-decoration: none;
-    color: white;
+    color: rgb(231, 229, 229);
 }
 
 .stones-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
     justify-content: center;
     align-items: center;
     gap:1rem;
 }
 
 .stone-wrapper{
-    width: 300px;
-    height: 500px;
+    width: 55rem;
+    height: 400px;
+    font-size: 18px;
+    /* width: 300px;
+    height: 500px; */
     margin: auto;
-    background-color: rgba(12, 12, 12, 0.486);
+    background-color: rgba(12, 12, 12, 0.199);
     padding: 1rem;
     border-radius: 2rem;
-    border: 2px solid white;
+    border: 2px solid rgb(231, 229, 229);
     gap: 2rem;
     margin-top: 2rem;
     text-decoration: none;
     color: rgb(219, 218, 218);
     transition: 0.3s;
+    
 }
 
 .stone-wrapper:hover{
@@ -68,18 +74,21 @@ font-size: larger;}
     flex-direction: column;
     width: 70%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 7rem;
     gap: 1rem;
+    
 }
 
 .stones-form input {
     padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.747);
+    color: black
 }
 .stones-form button{
     padding: 0.5rem;
     border: 2px;
-    
-    background-color: rgba(255, 217, 0, 0.575);
+    font-size: 18px;
+    background-color: rgba(255, 217, 0, 0.466);
     border-radius: 2rem;
     cursor: pointer;
 }
@@ -98,6 +107,7 @@ font-size: larger;}
     margin-top: 1rem;
     text-align: center;
     color: aliceblue;
+    font-size: x-large;
 
 }
 
@@ -123,6 +133,7 @@ font-size: larger;}
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
+    font-size: 20px;
 }
 
 .delete-button{
@@ -143,6 +154,7 @@ font-size: larger;}
     text-align: center;
     margin: auto;
     margin-top: 1rem;
+    font-size: x-large;
 
 }
 
@@ -167,7 +179,25 @@ font-size: larger;}
         flex-wrap: wrap;
         justify-content: space-between; 
         align-items: flex-start;
+        border: none;
+
     }
 
+
+    .stones-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .stone-wrapper {
+        font-size: 16px; 
+        border: none;
+        
+    }
+
+    .delete-button {
+        padding: 0.5rem 1rem; 
+        font-size: 14px; 
+
+    }
 }
-    

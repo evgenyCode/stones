@@ -9,7 +9,7 @@ stoneFormButton.addEventListener ("click", async ()=>{
 
     if (!stoneTitle || isNaN(stonePrice) || !stoneDescription || !stoneImage) {
         const messageWrapper = document.getElementById('response-message');
-        messageWrapper.innerHTML = "All fields must be filled.";
+        messageWrapper.innerHTML = "All fields must be filled or price must be number.";
         return;
     }
 
@@ -37,7 +37,7 @@ const data = await response.json();
 if(data){
 
 const messageWrapper = document.getElementById('response-message');
-messageWrapper.innerHTML = "Stone was inserted"
+messageWrapper.innerHTML = "Stone was added"
 
     setTimeout(()=>{window.location.replace("index.html")
 

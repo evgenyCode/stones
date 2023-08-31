@@ -9,7 +9,7 @@ const addStoneToScreen = (stone)=>{
     const title = document.getElementById ('stone-title');
     title.innerHTML = stone.title;
     const price = document.getElementById ('stone-price');
-    price.innerHTML = stone.price;
+    price.innerHTML = "Nuo " + stone.price + " €/M2";
     const description = document.getElementById ('stone-description');
     description.innerHTML = stone.description;
     const stoneImage = document.getElementById('stone-page-image');

@@ -22,7 +22,7 @@ stones.forEach(stone => {
     title.innerHTML = stone.title;
 
     const price = document.createElement('h3'); 
-    price.innerHTML = stone.price + " €/M2";
+    price.innerHTML ="Nuo " + stone.price + " €/M2";
 
     const description = document.createElement('p'); 
     description.innerHTML = stone.description; 
